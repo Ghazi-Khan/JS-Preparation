@@ -1,0 +1,8 @@
+Most common methods =>
+
+1. slice(start, end)
+2. substring(start, end)
+3. substr(start, length)
+4. toUpperCase()
+5. toLowerCase()
+
