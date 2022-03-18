@@ -80,5 +80,26 @@ const firstNonRepeatedChar = (str) => {
   return noRepeatedChar.char;
 }
 
-const test = "cbcbdde";
-console.log("First non-repeated character: ", firstNonRepeatedChar(test));
+// const test = "cbcbdde";
+// console.log("First non-repeated character: ", firstNonRepeatedChar(test));
+
+
+// Challenge # 3 — Reversing letters and words
+
+// Reversing letters means you write certain letters (or numbers) backward or upside down. This is sometimes referred to as mirror writing.
+
+// Input: "I evol uoy os !hcum"
+// Output: I love you so much!
+
+
+const ReversingWords = (str) => {
+
+  let res = ''
+  str.split(' ').forEach(word => {
+    res += ' ' + word.split('').reverse().join('');
+  });
+  return res;
+}
+
+const test = "I evol uoy os !hcum";
+console.log("First non-repeated character: ", ReversingWords(test));
