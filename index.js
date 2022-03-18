@@ -10,27 +10,75 @@
 const conuntDuplicateChars = (str) => {
   if (!str) return -1;
 
-  const res = {};
+  const freq = {};
   // Traditional for-loop
   // for (let i = 0; i < str.length; i++) {
   //     const char = str[i];
-  //     if (res[char]) {
-  //         res[char]++;
+  //     if (freq[char]) {
+  //         freq[char]++;
   //     } else {
-  //         res[char] = 1;
+  //         freq[char] = 1;
   //     }
   // }
 
   // using forEah-loop
   str.split('').forEach((char) => {
-    if (res[char]) {
-      res[char]++;
+    if (freq[char]) {
+      freq[char]++;
     } else {
-      res[char] = 1;
+      freq[char] = 1;
     }
   });
-  return res;
+  return freq;
 };
 
-const test = "adsgfagadsgdaffdsAASFCASD";
-console.log("Count Duplicate characters: ", conuntDuplicateChars(test));
+// const test = "adsgfagadsgdaffdsAASFCASD";
+// console.log("Count Duplicate characters: ", conuntDuplicateChars(test));
+
+
+// Challenge # 2— Finding the first non-repeated character
+
+// Write a JavaScript program to find the first non-repeated character in a String is a common question on coding challenges. We can solve the problem in a single traversal of the string or in more complete/partial traversals.
+
+// Input: "cbcbdde"
+
+// Output: e
+
+const firstNonRepeatedChar = (str) => {
+
+  if (!str) return -1;
+
+  const freq = {};
+
+  str.split('').forEach((char, index) => {
+
+    if (freq[char] !== undefined) {
+      freq[char] = -1;  // repeated character
+    } else {
+      freq[char] = index;
+    }
+  })
+
+  let noRepeatedChar;
+  for (const char in freq) {
+    if (!noRepeatedChar) {
+      if (freq[char] !== -1) {
+        noRepeatedChar = {
+          char,
+          index: freq[char]
+        }
+      }
+    } else {
+      if (freq[char] !== -1 && noRepeatedChar.index > freq[char]) {
+        noRepeatedChar = {
+          char,
+          index: freq[char]
+        }
+      }
+    }
+  }
+  return noRepeatedChar.char;
+}
+
+const test = "cbcbdde";
+console.log("First non-repeated character: ", firstNonRepeatedChar(test));
