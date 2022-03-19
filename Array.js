@@ -12,3 +12,33 @@
 //10. lastindexof(item) -> returns last index positon
 //11. includes(itemName) -> return true if item is found else false.
 //12. sort() -> sort the data lexographically.
+
+//13. traditional sort
+
+// function CompareNumberic(a,b){
+//     if(a > b) return 1;
+//     if(a == b) return 0;
+//     if(a < b) return -1;
+// }
+// let arr = [1,2,3,4,15,-1,-2];
+// console.log(arr.sort(CompareNumberic));
+// Output -> [-2, -1, 1, 2, 3, 4, 15]
+
+// shorthand
+// console.log(arr.sort( (a,b) => a - b));
+// Output -> [-2, -1, 1, 2, 3, 4, 15]
+
+// ---------------------------------------------------------------------------------------//
+
+// 14. sort for string alphabetically
+
+// let countries = ['Andorra','Vitenam','India','Ukraine','Russia','UAE'];
+// console.log(countries.sort((a,b) => a>b ? 1 : -1));
+// Output ->  ['Andorra', 'India', 'Russia', 'UAE', 'Ukraine', 'Vitenam']
+
+// let countries = ['Österreich','Andorra','Vitenam','India','Ukraine','Russia','UAE'];
+// console.log(countries.sort((a,b) => a.localeCompare(b)));
+// Output-> ['Andorra', 'India', 'Österreich', 'Russia', 'UAE', 'Ukraine', 'Vitenam']
+// if we use above method at line 36 then Österreich will print after Vitenam because 'Ö' alphabet has higher precedence then 'V'.
+
+//15. reverse(array) -> takes array and returns items in reverse.
