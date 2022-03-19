@@ -38,7 +38,9 @@ const conuntDuplicateChars = (str) => {
 
 // Challenge # 2— Finding the first non-repeated character
 
-// Write a JavaScript program to find the first non-repeated character in a String is a common question on coding challenges. We can solve the problem in a single traversal of the string or in more complete/partial traversals.
+// Write a JavaScript program to find the first non-repeated character in a String
+// is a common question on coding challenges. We can solve the problem in a single
+// traversal of the string or in more complete/partial traversals.
 
 // Input: "cbcbdde"
 
@@ -86,7 +88,8 @@ const firstNonRepeatedChar = (str) => {
 
 // Challenge # 3 — Reversing letters and words
 
-// Reversing letters means you write certain letters (or numbers) backward or upside down. This is sometimes referred to as mirror writing.
+// Reversing letters means you write certain letters (or numbers) backward or upside down.
+// This is sometimes referred to as mirror writing.
 
 // Input: "I evol uoy os !hcum"
 // Output: I love you so much!
@@ -121,7 +124,8 @@ let sum = function(a){
 
 
 // Challenge #5 —
-// Create a for loop that iterates up to 100 while outputting "fizz" at multiples of 3, "buzz" at multiples of 5 and "fizzbuzz" at multiples of 3 and 5.
+// Create a for loop that iterates up to 100 while outputting "fizz" at multiples of 3,
+// "buzz" at multiples of 5 and "fizzbuzz" at multiples of 3 and 5.
 
 // Program ->
 
@@ -131,7 +135,8 @@ let sum = function(a){
 //   console.log(i,fizz ? (buzz ? 'fizzbuzz' : 'fizz') : 'buzz');
 // }
 
-// Output -> 0 'fizzbuzz' 1 'buzz' 2 'buzz' 3 'fizz' 4 'buzz' 5 'buzz'  6 'fizz'  7 'buzz' 8 'buzz' 9 'fizz' 10 'buzz' 11 'buzz' 12 'fizz' 13 'buzz' 14 'buzz' 15 'fizzbuzz'
+// Output -> 0 'fizzbuzz' 1 'buzz' 2 'buzz' 3 'fizz' 4 'buzz' 5 'buzz'  6 'fizz'  7
+// buzz' 8 'buzz' 9 'fizz' 10 'buzz' 11 'buzz' 12 'fizz' 13 'buzz' 14 'buzz' 15 'fizzbuzz'
 
 // Challenge #6 —
 //
