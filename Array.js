@@ -41,4 +41,4 @@
 // Output-> ['Andorra', 'India', 'Österreich', 'Russia', 'UAE', 'Ukraine', 'Vitenam']
 // if we use above method at line 36 then Österreich will print after Vitenam because 'Ö' alphabet has higher precedence then 'V'.
 
-//15. reverse(array) -> takes array and returns items in reverse.
+//15. reverse(array) -> takes array and returns array items in reverse in array.
