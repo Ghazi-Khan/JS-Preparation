@@ -103,3 +103,18 @@ const ReversingWords = (str) => {
 
 const test = "I evol uoy os !hcum";
 console.log("First non-repeated character: ", ReversingWords(test));
+
+
+// Challenge #4 — WAP for this statement : =>  sum(1)(2)(3)(4)(5)
+
+let sum = function(a){
+  return function(b){
+    if(b){
+      return sum(a+b);
+    }
+    return a;
+  }
+}
+
+console.log(sum(1)(2)(3)(4)(5)());
+// Output -> 15.
