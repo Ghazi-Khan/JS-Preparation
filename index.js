@@ -102,7 +102,7 @@ const ReversingWords = (str) => {
 }
 
 const test = "I evol uoy os !hcum";
-console.log("First non-repeated character: ", ReversingWords(test));
+// console.log("First non-repeated character: ", ReversingWords(test));
 
 
 // Challenge #4 — WAP for this statement : =>  sum(1)(2)(3)(4)(5)
@@ -116,5 +116,26 @@ let sum = function(a){
   }
 }
 
-console.log(sum(1)(2)(3)(4)(5)());
+// console.log(sum(1)(2)(3)(4)(5)());
 // Output -> 15.
+
+
+// Challenge #5 —
+// Create a for loop that iterates up to 100 while outputting "fizz" at multiples of 3, "buzz" at multiples of 5 and "fizzbuzz" at multiples of 3 and 5.
+
+// Program ->
+
+// for(let i=0;i<100;i++){
+//   let fizz= i%3 === 0;
+//   let buzz = i%5 === 0;
+//   console.log(i,fizz ? (buzz ? 'fizzbuzz' : 'fizz') : 'buzz');
+// }
+
+// Output -> 0 'fizzbuzz' 1 'buzz' 2 'buzz' 3 'fizz' 4 'buzz' 5 'buzz'  6 'fizz'  7 'buzz' 8 'buzz' 9 'fizz' 10 'buzz' 11 'buzz' 12 'fizz' 13 'buzz' 14 'buzz' 15 'fizzbuzz'
+
+// Challenge #6 —
+//
+
+// Program ->
+
+// Output ->
