@@ -144,3 +144,21 @@ let sum = function(a){
 // Program ->
 
 // Output ->
+
+
+// Anagram Program
+
+// function isAnagram(str1,str2){
+//   let anagram = 0;
+//   if(str1.length != str2.length){
+//       return 'Given two string is not anagram'
+//   }
+//   else{
+//       let sort1 = str1.split('').sort();
+//       let sort2 = str2.split('').sort();
+//       return sort1.join('') === sort2.join('') ? "Given Two String is anagram" : "Given two string is not anagram";
+//   }
+// }
+
+// alert(isAnagram('abcd','dcaa'));
+
